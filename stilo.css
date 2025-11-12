@@ -127,7 +127,7 @@ header.navbar {
 .Quem-somos {
   padding: 80px 20px;
   text-align: center;
-  background: linear-gradient(to bottom, #f7fdf7, #e8f5e9);
+  background: linear-gradient(135deg, #f8faf8 3%, #cbcec8 100%, #b9c5bc 1%);
 }
 .somos {
   max-width: 900px;
@@ -138,10 +138,10 @@ header.navbar {
 .somos h2 {
   color: #0a550a;
   font-size: 2.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .somos p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 40px;
 }
 .galeria {
@@ -153,11 +153,11 @@ header.navbar {
 }
 
 .galeria img {
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -170,12 +170,14 @@ header.navbar {
 .dashboard {
   padding: 60px 20px;
   text-align: center;
+  background: linear-gradient(180deg, #f7f8f7, #97a397);
 }
 
 .card-produtos h2 {
-  color: #0a550a;
+  color: #466846;
   margin-bottom: 40px;
   font-size: 2rem;
+  
 }
 
 .produtos-container {
@@ -183,6 +185,7 @@ header.navbar {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+  
 }
 
 .produto {
@@ -192,7 +195,7 @@ header.navbar {
   width: 280px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
-  color: white;
+  color: rgb(250, 248, 248);
 }
 
 .produto:hover {
@@ -377,7 +380,7 @@ header.navbar {
   transform: scale(1.05);
 }
 
-/* ========== RASTREIO ========== */
+/* rastreio */
 .conteudo-rastreio {
   padding: 60px 20px;
   text-align: center;
@@ -387,10 +390,10 @@ header.navbar {
 .mapa-container {
   margin: 48px auto;
   max-width: 778px;
-  background: linear-gradient(rgba(10, 9, 8, 0.4), rgba(245, 243, 243, 0.4));
+  background: linear-gradient(rgb(250, 249, 249), rgba(252, 251, 251, 0.993));
   padding: 51px;
   border-radius: 25px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 14px rgba(5, 5, 5, 0.15);
 }
 
 .mapa-busca {
@@ -440,7 +443,7 @@ header.navbar {
   border: 3px solid #0a550a;
 }
 
-/* ========== FOOTER ========== */
+
 footer {
   text-align: center;
   padding: 15px;
@@ -451,7 +454,7 @@ footer {
 }
 
 
-/* ========== MAPA E GRÁFICO ========== */
+/* mapa brasil e grafico */
 .conteudo-rastreio {
   padding: 60px 20px;
   text-align: center;
@@ -461,7 +464,7 @@ footer {
 .mapa-container {
     margin: 48px auto;
     max-width: 778px;
-    background: linear-gradient(rgba(10, 9, 8, 0.4), rgba(245, 243, 243, 0.4));
+    background: linear-gradient(rgba(250, 249, 249, 0.4), rgba(245, 243, 243, 0.4));
     padding: 51px;
     border-radius: 63px;
     box-shadow: 100% rgba(1000, 100, 110, 0.15);
@@ -516,10 +519,7 @@ footer {
   border: 3px solid #0a550a;
 }
 
-/* ============================
-   🌿 ESTILO DO INDEX / INÍCIO
-   ============================ */
-
+/* ESTILO DO INDEX / INÍCIO*/
 .text-fundo {
   background: linear-gradient(
       rgba(165, 76, 135, 0.4),
@@ -553,7 +553,7 @@ footer {
   margin-bottom: 30px;
 }
 
-/* 🌿 BOTÕES */
+
 .botao-container {
   text-align: center;
   margin-top: 40px;
@@ -579,53 +579,70 @@ footer {
 }
 
 .secao-sustentavel {
-  padding: 63px 0;
+  padding: 100px 20px;
   text-align: center;
-  background: linear-gradient(
-    rgba(212, 188, 188, 0.8),
-    rgba(94, 89, 89, 0.8),
-    rgba(212, 188, 188, 0.8)
-  );
+  background: linear-gradient(135deg, #dadfdb 0%, #ccf79b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.secao-sustentavel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("imagem/folhas.png") center/cover no-repeat;
+  opacity: 0.08;
+  z-index: 0;
 }
 
 .secao-sustentavel h2 {
-  font-size: 2.2rem;
-  color: #0a550a;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #145a32;
+  margin-bottom: 25px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease;
 }
 
 .secao-sustentavel p {
-  max-width: 750px;
-  margin: 0 auto 30px;
-  color: #333;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #2e2e2e;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.3s ease;
 }
 
 .botao-principal {
+  display: inline-block;
   background: linear-gradient(to right, #43a047, #2e7d32);
   color: #fff;
-  padding: 12px 28px;
-  border-radius: 30px;
+  padding: 14px 32px;
+  border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.4);
 }
 
 .botao-principal:hover {
-  background: #2b6e30;
-  transform: scale(1.05);
+  background: #256c28;
+  transform: scale(1.07);
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.5);
 }
 
-/* 🌿 SEÇÃO DE BENEFÍCIOS */
+/* beneficios */
 .beneficios {
   padding: 80px 20px;
-  background: linear-gradient(
-    rgba(105, 101, 99, 0.2),
-    rgba(212, 188, 188, 0.8),
-    rgba(10, 9, 9, 0.8)
-  );
   text-align: center;
+  background: linear-gradient(135deg, #f8faf8 1%, #cbcec8 100%, #b9c5bc 1%);
 }
 
 .beneficios h2 {
