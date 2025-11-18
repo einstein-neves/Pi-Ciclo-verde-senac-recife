@@ -245,75 +245,123 @@ header.navbar {
 }
 
 /* login e cadastro*/
+
 .container-principal {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  gap: 40px;
+  min-height: 85vh;
+  padding: 30px;
+  background: #f4f8f4;
+  width: 100%;
 }
+
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 30px;
+  background: #f4f8f4;
+  width: 100%;
+}
+
+
 .login-container {
-  background: linear-gradient(403deg, #f9faf9,#eff7efdc);
-  border-radius: 15px;
-  padding: 50px;
+  background: linear-gradient(403deg, #f9faf9, #eef7ed);
+  border-radius: 20px;
+  padding: 40px;
   width: 100%;
   max-width: 400px;
   text-align: center;
+
   border-top: 10px solid #27662a;
   border-image: linear-gradient(to right, #43a047, #2e7d32) 1;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+
 .login-container h2 {
   color: #0a550a;
   margin-bottom: 25px;
   font-size: 28px;
+  font-weight: bold;
 }
+
 .login-container label {
   display: block;
   text-align: left;
   font-weight: bold;
   margin-bottom: 6px;
+  color: #0a550a;
 }
+
+
 .login-container input {
   width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px solid #ccc;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #cfcfcf;
   outline: none;
-  font-size: 17px;
-  margin-bottom: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: 0.3s;
 }
+
 .login-container input:focus {
   border-color: #2e7d32;
+  box-shadow: 0 0 4px rgba(46, 125, 50, 0.4);
 }
+
+/* Botão */
 .botao-login {
   background: linear-gradient(to right, #43a047, #2e7d32);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 12px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
   width: 100%;
 }
+
 .botao-login:hover {
   background: #2b6e30;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
+
+
 .signup-link {
   margin-top: 15px;
   font-size: 14px;
 }
+
 .signup-link a {
   color: #0a550a;
   font-weight: bold;
   text-decoration: none;
 }
+
 .signup-link a:hover {
   text-decoration: underline;
 }
 
+
+@media (max-width: 900px) {
+  .container-principal {
+    padding: 20px;
+  }
+
+  .login-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
 /* proposta de pedidos */
 .container-propostas {
   max-width: 550px;
@@ -517,6 +565,26 @@ footer {
   border-radius: 15px;
   margin-top: 10px;
   border: 3px solid #0a550a;
+}
+.info{
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg,#f8faf8,#cbcec8);
+}
+.info h2{
+  font-size: 2rem;
+  color: #0a550a;
+}
+.info ul{
+
+  list-style: none;
+}
+
+.info ul li {
+
+  font-weight: 600;
+  margin:8px 0 ;
+  font-size: 1.2rem;
 }
 
 /* ESTILO DO INDEX / INÍCIO*/
